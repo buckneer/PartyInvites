@@ -1,0 +1,19 @@
+﻿@model PartyInvites.Models.GuestResponse
+@{
+}
+
+<div class="mx-auto mt-5 d-flex justify-content-center align-items-center flex-column b-1 border-primary">
+    <h1>Thank you, @Model.Name!</h1>
+    <h1>
+        @if (Model.WillAttend == true)
+        {
+            @: Happy :)
+       }
+        else
+        {
+            @: Sad :(
+        }
+    </h1>
+
+</div>
+

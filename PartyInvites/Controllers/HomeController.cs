@@ -27,8 +27,8 @@ public class HomeController : Controller
     [HttpPost]
     public ViewResult RsvpForm(GuestResponse guestResponse)
     {
-        Console.WriteLine(guestResponse.Name);
-        return View();
+        
+        return View("Thanks", guestResponse);
     }
 }
 
